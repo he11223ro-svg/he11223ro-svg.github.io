@@ -1,6 +1,6 @@
 ﻿# Отчет по лабораторной работе №3
-**Тема:** CI/CD для статического сайта в SourceCraft и GitHub Actions  
-**Выполнил:** Альшухайед Рами  
+**Тема:** CI/CD для статического сайта в SourceCraft и GitHub Actions
+**Выполнил:** Альшухайед Рами
 
 ---
 
@@ -12,10 +12,9 @@
 ## 2. Выполненные шаги
 
 ### Настройка SourceCraft
-1. Авторизовался на sourcecraft.dev через аккаунт Яндекс.
-2. Создал публичную организацию lshuhayed и пустой репозиторий he11223ro-svg-github-io.
-3. Создал Personal Access Token (PAT) с правами Maintainer.
+1. Авторизовался на `sourcecraft.dev` через аккаунт Яндекс.
+2. Создал публичную организацию `alshuhayed` и пустой репозиторий `he11223ro-svg-github-io`.
+3. Создал Personal Access Token (PAT) с правами `Maintainer`.
 4. Добавил второй remote-репозиторий в локальный проект:
-   `ash
+   ```bash
    git remote add sourcecraft https://alshuhayed:<TOKEN>@git.sourcecraft.dev/alshuhayed/he11223ro-svg-github-io.git
-# 1. إغلاق حفظ الملف
