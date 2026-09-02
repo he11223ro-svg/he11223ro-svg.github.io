@@ -17,8 +17,8 @@ nav:
   - 'Лабораторные работы':
       - 'Лабораторная 1 (Python Basics)': labs/lab1.md
       - 'Лабораторная 2 (NumPy & Data)': labs/lab2.md
-      - 'Лабораторная 3 (Pandas)': labs/lab3.md
-      - 'Лабораторная 4': labs/lab4.md
+      - 'Лабораторная 3 (CI/CD)': labs/lab3.md
+      - 'Лабораторная 4 (Classification)': labs/lab4.md
       - 'Лабораторная 5': labs/lab5.md
       - 'Лабораторная 6': labs/lab6.md
       - 'Лабораторная 7': labs/lab7.md
