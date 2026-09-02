@@ -1,4 +1,4 @@
-\# Лабораторная работа 7 (Анализ текста)
+Лабораторная работа 7 (Анализ текста)
 
 
 
@@ -34,7 +34,7 @@
 
 Полный рабочий ноутбук с исходным кодом и результатами анализа текста:  
 
-👉 \*\*\[Открыть Google Colab: Lab 7 Text Analysis Tasks](https://colab.research.google.com/drive/1HqM6l3DUb6HelJGV8IuBdiwB-ZYuWEKR?usp=sharing)\*\* \*(доступ открыт по ссылке)\*
+👉 \[Открыть Google Colab: Lab 7 Text Analysis Tasks](https://colab.research.google.com/drive/1HqM6l3DUb6HelJGV8IuBdiwB-ZYuWEKR?usp=sharing) \*(доступ открыт по ссылке)\*
 
 
 
