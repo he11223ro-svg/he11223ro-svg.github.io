@@ -545,7 +545,54 @@
 
   <h1>Лабораторная 5</h1>
 
-
+<p># Отчет по лабораторной работе №5</p>
+<p>**Тема:** Регрессия с применением Scikit-Learn (Predict House Price)  </p>
+<p>**Выполнил:** Альшухайед Рами</p>
+<p>---</p>
+<p>## 1. Цель работы</p>
+<p>Освоение методов регрессии с использованием библиотеки **Scikit-Learn**, проведение сравнительного анализа алгоритмов прогнозирования непрерывных значений (Linear Regression, Ridge, Lasso, SVR, Gradient Boosting, Random Forest), а также исследование способов оптимизации гиперпараметров для снижения ошибки предсказания.</p>
+<p>---</p>
+<p>## 2. Ссылка на Google Colab</p>
+<p>Полный рабочий ноутбук с исходным кодом и результатами экспериментов:  </p>
+<p>👉 **[Открыть Google Colab: Predict House Price Tasks](https://colab.research.google.com/drive/1jU0Yj5oBnMaM-Kraq4V6uZtWl9lsN2ib?usp=sharing)** *(доступ открыт по ссылке)*</p>
+<p>---</p>
+<p>## 3. Результаты экспериментов и сравнение моделей</p>
+<p>В ходе выполнения самостоятельной работы были обучены и протестированы различные модели регрессии на датасете <code>California Housing</code> с предварительным масштабированием признаков (<code>StandardScaler</code>):</p>
+<p>| Модель | MSE | RMSE | R2-Score |</p>
+<p>| :--- | :---: | :---: | :---: |</p>
+<p>| **Linear Regression** | 0.555 | 0.745 | 0.575 |</p>
+<p>| **Ridge Regression** | 0.555 | 0.745 | 0.575 |</p>
+<p>| **Lasso Regression** | 0.887 | 0.942 | -0.001 |</p>
+<p>| **Support Vector Regressor (SVR)** | 0.354 | 0.595 | 0.730 |</p>
+<p>| **Gradient Boosting** | 0.239 | 0.489 | 0.817 |</p>
+<p>| **Random Forest (Tuned)** | **0.205** | **0.453** | **0.844** |</p>
+<p>### Анализ результатов и тюнинг Random Forest:</p>
+<p>Оптимизация гиперпараметров ансамблевого алгоритма **Random Forest Regressor** (увеличение числа деревьев <code>n\_estimators=150</code> и ограничение глубины <code>max\_depth=15</code>) позволила добиться наименьшей среднеквадратичной ошибки (**RMSE = 0.453**) и высокого коэффициента детерминации (**R2 = 0.844**), что превосходит базовые линейные модели.</p>
+<p>---</p>
+<p>## 4. Обзор современных алгоритмов регрессии</p>
+<p>На основе анализа передовых практик Machine Learning:</p>
+<p>1. **Gradient Boosting Frameworks:** Ансамбли **CatBoost**, **LightGBM** и **XGBoost** демонстрируют исключительную производительность и точность на структурированных и регрессионных задачах.</p>
+<p>2. **Neural Networks for Regression:** Полносвязные нейронные сети с правильной регуляризацией (Dropout, Batch Normalization) успешно применяются для сложных нелинейных зависимостей.</p>
+<p>---</p>
+<p>## 5. Пошаговый алгоритм интеграции регрессионной модели с веб-сервисом (FastAPI)</p>
+<p>1. **Сохранение обученной модели:**</p>
+<p>&#x20;  ```python</p>
+<p>&#x20;  import joblib</p>
+<p>&#x20;  joblib.dump(model, 'house_price_model.pkl')</p>
+<p>2. **Создание REST API (FastAPI):**</p>
+<p>&#x20;  ```python</p>
+<p>&#x20;  from fastapi import FastAPI</p>
+<p>&#x20;  import joblib</p>
+<p>&#x20;  import numpy as np</p>
+<p>&#x20;  app = FastAPI()</p>
+<p>&#x20;  model = joblib.load('house_price_model.pkl')</p>
+<p>&#x20;  @app.post("/predict_price")</p>
+<p>&#x20;  def predict_price(features: list):</p>
+<p>&#x20;      data = np.array(features).reshape(1, -1)</p>
+<p>&#x20;      predicted_price = model.predict(data)</p>
+<p>&#x20;      return {"estimated_price": float(predicted_price[0])}</p>
+<p>3. **Контейнеризация:** Упаковка приложения в <code>Dockerfile</code>.</p>
+<p>4. **Развертывание (Deployment):** Деплой сервиса на облачную платформу для удаленного доступа.</p>
 
 
 
