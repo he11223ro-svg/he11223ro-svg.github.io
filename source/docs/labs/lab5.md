@@ -96,7 +96,7 @@
 
 &#x20;  joblib.dump(model, 'house\_price\_model.pkl')
 
-2\. \*\*Создание REST API (FastAPI):\*\*
+Создание REST API (FastAPI):
 
 from fastapi import FastAPI
 
@@ -122,9 +122,9 @@ def predict\_price(features: list):
 
 &#x20;   return {"estimated\_price": float(predicted\_price\[0])}
 
-3\. \*\*Контейнеризация: Упаковка приложения в Dockerfile.\*\*
+Контейнеризация: Упаковка приложения в Dockerfile.
 
 
 
-4\. \*\*Развертывание (Deployment): Деплой сервиса на облачную платформу для удаленного доступа.\*\*
+Развертывание (Deployment): Деплой сервиса на облачную платформу для удаленного доступа.
 
