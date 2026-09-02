@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#no3-cicd-sourcecraft" class="md-skip">
+        <a href="#no3" class="md-skip">
           Skip to content
         </a>
       
@@ -427,13 +427,41 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Цель работы
+        1. Цель работы
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Выполненные шаги
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Выполненные шаги">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sourcecraft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Настройка SourceCraft
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -592,13 +620,41 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Цель работы
+        1. Цель работы
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Выполненные шаги
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Выполненные шаги">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sourcecraft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Настройка SourceCraft
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -619,9 +675,24 @@
 
 
 
-<h1 id="no3-cicd-sourcecraft">Лабораторная работа №3. CI/CD и SourceCraft</h1>
-<h2 id="_1">Цель работы</h2>
-<p>Ознакомление с принципами автоматизации сборки и деплоя проектов.</p>
+<h1 id="no3">Отчет по лабораторной работе №3</h1>
+<p><strong>Тема:</strong> CI/CD для статического сайта в SourceCraft и GitHub Actions<br />
+<strong>Выполнил:</strong> Альшухайед Рами  </p>
+<hr />
+<h2 id="1">1. Цель работы</h2>
+<p>Реализовать сценарий автоматического развертывания статического сайта, построенного на движке <strong>MkDocs</strong>, с использованием платформ <strong>GitHub Actions</strong> и <strong>SourceCraft</strong>.</p>
+<hr />
+<h2 id="2">2. Выполненные шаги</h2>
+<h3 id="sourcecraft">Настройка SourceCraft</h3>
+<ol>
+<li>Авторизовался на sourcecraft.dev через аккаунт Яндекс.</li>
+<li>Создал публичную организацию lshuhayed и пустой репозиторий he11223ro-svg-github-io.</li>
+<li>Создал Personal Access Token (PAT) с правами Maintainer.</li>
+<li>Добавил второй remote-репозиторий в локальный проект:
+   `ash
+   git remote add sourcecraft https://alshuhayed:<TOKEN>@git.sourcecraft.dev/alshuhayed/he11223ro-svg-github-io.git</li>
+</ol>
+<h1 id="1_1">1. إغلاق حفظ الملف</h1>
 
 
 
