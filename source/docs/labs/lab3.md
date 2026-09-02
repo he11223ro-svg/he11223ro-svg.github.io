@@ -16,5 +16,5 @@
 2. Создал публичную организацию `alshuhayed` и пустой репозиторий `he11223ro-svg-github-io`.
 3. Создал Personal Access Token (PAT) с правами `Maintainer`.
 4. Добавил второй remote-репозиторий в локальный проект:
-   ```bash
-   git remote add sourcecraft https://alshuhayed:<TOKEN>@git.sourcecraft.dev/alshuhayed/he11223ro-svg-github-io.git
+```bash
+git remote add sourcecraft https://alshuhayed:<TOKEN>@git.sourcecraft.dev/alshuhayed/he11223ro-svg-github-io.git
