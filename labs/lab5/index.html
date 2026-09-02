@@ -580,19 +580,18 @@
 <p>&#x20;  import joblib</p>
 <p>&#x20;  joblib.dump(model, 'house_price_model.pkl')</p>
 <p>2. **Создание REST API (FastAPI):**</p>
-<p>&#x20;  ```python</p>
-<p>&#x20;  from fastapi import FastAPI</p>
-<p>&#x20;  import joblib</p>
-<p>&#x20;  import numpy as np</p>
-<p>&#x20;  app = FastAPI()</p>
-<p>&#x20;  model = joblib.load('house_price_model.pkl')</p>
-<p>&#x20;  @app.post("/predict_price")</p>
-<p>&#x20;  def predict_price(features: list):</p>
-<p>&#x20;      data = np.array(features).reshape(1, -1)</p>
-<p>&#x20;      predicted_price = model.predict(data)</p>
-<p>&#x20;      return {"estimated_price": float(predicted_price[0])}</p>
-<p>3. **Контейнеризация:** Упаковка приложения в <code>Dockerfile</code>.</p>
-<p>4. **Развертывание (Deployment):** Деплой сервиса на облачную платформу для удаленного доступа.</p>
+<p>from fastapi import FastAPI</p>
+<p>import joblib</p>
+<p>import numpy as np</p>
+<p>app = FastAPI()</p>
+<p>model = joblib.load('house_price_model.pkl')</p>
+<p>@app.post("/predict_price")</p>
+<p>def predict_price(features: list):</p>
+<p>&#x20;   data = np.array(features).reshape(1, -1)</p>
+<p>&#x20;   predicted_price = model.predict(data)</p>
+<p>&#x20;   return {"estimated_price": float(predicted_price[0])}</p>
+<p>3. **Контейнеризация: Упаковка приложения в Dockerfile.**</p>
+<p>4. **Развертывание (Deployment): Деплой сервиса на облачную платформу для удаленного доступа.**</p>
 
 
 
