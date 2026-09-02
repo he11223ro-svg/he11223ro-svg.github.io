@@ -20,5 +20,5 @@ nav:
       - 'Лабораторная 3 (CI/CD)': labs/lab3.md
       - 'Лабораторная 4 (Classification)': labs/lab4.md
       - 'Лабораторная 5 (Regression): labs/lab5.md
-      - 'Лабораторная 6': labs/lab6.md
+      - 'Лабораторная 6 (Extract-Transform): labs/lab6.md
       - 'Лабораторная 7': labs/lab7.md
