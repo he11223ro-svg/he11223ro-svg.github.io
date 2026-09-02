@@ -1,0 +1,24 @@
+﻿site_name: Portfolio - Rami Alshuhayed
+site_url: https://he11223ro-svg.github.io/
+site_author: Rami Alshuhayed
+
+theme:
+  name: material
+  palette:
+    primary: indigo
+    accent: indigo
+  features:
+    - navigation.expand
+    - navigation.top
+
+nav:
+  - Главная: index.md
+  - Об авторе: about.md
+  - Лабораторные работы:
+      - Лабораторная работа 1: labs/lab1.md
+      - Лабораторная работа 2: labs/lab2.md
+      - Лабораторная работа 3: labs/lab3.md
+      - Лабораторная работа 4: labs/lab4.md
+      - Лабораторная работа 5: labs/lab5.md
+      - Лабораторная работа 6: labs/lab6.md
+      - Лабораторная работа 7: labs/lab7.md
