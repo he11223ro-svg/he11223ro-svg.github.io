@@ -98,36 +98,33 @@
 
 2\. \*\*Создание REST API (FastAPI):\*\*
 
-&#x20;  ```python
+from fastapi import FastAPI
 
-&#x20;  from fastapi import FastAPI
+import joblib
 
-&#x20;  import joblib
-
-&#x20;  import numpy as np
+import numpy as np
 
 
 
-&#x20;  app = FastAPI()
+app = FastAPI()
 
-&#x20;  model = joblib.load('house\_price\_model.pkl')
-
-
-
-&#x20;  @app.post("/predict\_price")
-
-&#x20;  def predict\_price(features: list):
-
-&#x20;      data = np.array(features).reshape(1, -1)
-
-&#x20;      predicted\_price = model.predict(data)
-
-&#x20;      return {"estimated\_price": float(predicted\_price\[0])}
-
-3\. \*\*Контейнеризация:\*\* Упаковка приложения в `Dockerfile`.
+model = joblib.load('house\_price\_model.pkl')
 
 
 
-4\. \*\*Развертывание (Deployment):\*\* Деплой сервиса на облачную платформу для удаленного доступа.
+@app.post("/predict\_price")
 
+def predict\_price(features: list):
+
+&#x20;   data = np.array(features).reshape(1, -1)
+
+&#x20;   predicted\_price = model.predict(data)
+
+&#x20;   return {"estimated\_price": float(predicted\_price\[0])}
+
+3\. \*\*Контейнеризация: Упаковка приложения в Dockerfile.\*\*
+
+
+
+4\. \*\*Развертывание (Deployment): Деплой сервиса на облачную платформу для удаленного доступа.\*\*
 
