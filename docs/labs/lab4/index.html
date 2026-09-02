@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#no4" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -396,6 +401,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная 4 (Classification)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -413,6 +438,97 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Цель работы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-google-colab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Ссылка на Google Colab
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Результаты экспериментов и сравнение моделей
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Результаты экспериментов и сравнение моделей">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Анализ результатов:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Обзор современных алгоритмов классификации
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-ml-fastapi-flask" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Пошаговый алгоритм интеграции ML-модели с веб-сервисом (FastAPI / Flask)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -527,6 +643,88 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Цель работы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-google-colab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Ссылка на Google Colab
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Результаты экспериментов и сравнение моделей
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Результаты экспериментов и сравнение моделей">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Анализ результатов:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Обзор современных алгоритмов классификации
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-ml-fastapi-flask" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Пошаговый алгоритм интеграции ML-модели с веб-сервисом (FastAPI / Flask)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -543,40 +741,92 @@
 
 
 
-  <h1>Лабораторная 4 (Classification)</h1>
-
-<p># Отчет по лабораторной работе №4</p>
-<p>**Тема:** Классификация с применением Scikit-Learn (Predict Credit Default)  </p>
-<p>**Выполнил:** Альшухайед Рами</p>
-<p>---</p>
-<p>## 1. Цель работы</p>
-<p>Освоение методов бинарной классификации с использованием библиотеки **Scikit-Learn**, проведение сравнительного анализа различных алгоритмов машинного обучения (Logistic Regression, kNN, SVM, Random Forest) для задачи прогнозирования дефолта по кредиту, а также изучение способов интеграции ML-моделей в веб-сервисы.</p>
-<p>---</p>
-<p>## 2. Ссылка на Google Colab</p>
-<p>Полный рабочий ноутбук с исходным кодом и результатами экспериментов:</p>
-<p>* [Google Colab: Predict Credit Default Tasks](https://colab.research.google.com/drive/1ysMmYNXOHdy23sT7CJwVM5LcXK4SG6Wf?usp=sharing) *(доступ открыт по ссылке)*</p>
-<p>---</p>
-<p>## 3. Результаты экспериментов и сравнение моделей</p>
+<h1 id="no4">Отчет по лабораторной работе №4</h1>
+<p><strong>Тема:</strong> Классификация с применением Scikit-Learn (Predict Credit Default)<br />
+<strong>Выполнил:</strong> Альшухайед Рами</p>
+<hr />
+<h2 id="1">1. Цель работы</h2>
+<p>Освоение методов бинарной классификации с использованием библиотеки <strong>Scikit-Learn</strong>, проведение сравнительного анализа различных алгоритмов машинного обучения (Logistic Regression, kNN, SVM, Random Forest) для задачи прогнозирования дефолта по кредиту, а также изучение способов интеграции ML-моделей в веб-сервисы.</p>
+<hr />
+<h2 id="2-google-colab">2. Ссылка на Google Colab</h2>
+<p>Полный рабочий ноутбук с исходным кодом и результатами экспериментов:<br />
+👉 <strong><a href="https://colab.research.google.com/drive/1ysMmYNXOHdy23sT7CJwVM5LcXK4SG6Wf?usp=sharing">Открыть Google Colab: Predict Credit Default Tasks</a></strong> <em>(доступ открыт по ссылке)</em></p>
+<hr />
+<h2 id="3">3. Результаты экспериментов и сравнение моделей</h2>
 <p>В ходе выполнения самостоятельной работы были обучены и протестированы следующие алгоритмы классификации на предварительно масштабированных данных (<code>StandardScaler</code>):</p>
-<p>| Модель | Accuracy | Precision | Recall | F1-Score |</p>
-<p>| :--- | :---: | :---: | :---: | :---: |</p>
-<p>| **Logistic Regression** | 0.81 | 0.78 | 0.75 | 0.76 |</p>
-<p>| **k-Nearest Neighbors (kNN)** | 0.83 | 0.80 | 0.78 | 0.79 |</p>
-<p>| **Support Vector Machine (SVM)** | 0.85 | 0.82 | 0.81 | 0.81 |</p>
-<p>| **Random Forest** | **0.89** | **0.87** | **0.86** | **0.86** |</p>
-<p>### Анализ результатов:</p>
-<p>Ансамблевый метод **Random Forest** показал наилучшие метрики качества. Это объясняется тем, что алгоритмы на основе деревьев решений лучше справляются с нелинейными зависимостями в табличных кредитных данных и менее чувствительны к выбросам по сравнению с линейными моделями.</p>
-<p>---</p>
-<p>## 4. Обзор современных алгоритмов классификации</p>
-<p>На основе анализа научных публикаций и соревнований Kaggle:</p>
-<p>1. **Gradient Boosted Decision Trees (GBDT):** Библиотеки **CatBoost**, **LightGBM** и **XGBoost** являются стандартом отрасли для работы с табличными данными благодаря высокой точности и эффективной работе с категориальными признаками.</p>
-<p>2. **Deep Learning для табличных данных:** Модели на базе архитектур **TabNet** и **FT-Transformer** всё чаще применяются при наличии больших объемов данных.</p>
-<p>---</p>
-<p>## 5. Пошаговый алгоритм интеграции ML-модели с веб-сервисом (FastAPI / Flask)</p>
-<p>1. **Сохранение обученной модели:**</p>
-<p>&#x20;  ```python</p>
-<p>&#x20;  import joblib</p>
-<p>&#x20;  joblib.dump(model, 'credit_default_model.pkl')</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Модель</th>
+<th style="text-align: center;">Accuracy</th>
+<th style="text-align: center;">Precision</th>
+<th style="text-align: center;">Recall</th>
+<th style="text-align: center;">F1-Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Logistic Regression</strong></td>
+<td style="text-align: center;">0.81</td>
+<td style="text-align: center;">0.78</td>
+<td style="text-align: center;">0.75</td>
+<td style="text-align: center;">0.76</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>k-Nearest Neighbors (kNN)</strong></td>
+<td style="text-align: center;">0.83</td>
+<td style="text-align: center;">0.80</td>
+<td style="text-align: center;">0.78</td>
+<td style="text-align: center;">0.79</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Vector Machine (SVM)</strong></td>
+<td style="text-align: center;">0.85</td>
+<td style="text-align: center;">0.82</td>
+<td style="text-align: center;">0.81</td>
+<td style="text-align: center;">0.81</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Random Forest</strong></td>
+<td style="text-align: center;"><strong>0.89</strong></td>
+<td style="text-align: center;"><strong>0.87</strong></td>
+<td style="text-align: center;"><strong>0.86</strong></td>
+<td style="text-align: center;"><strong>0.86</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_1">Анализ результатов:</h3>
+<p>Ансамблевый метод <strong>Random Forest</strong> показал наилучшие метрики качества. Это объясняется тем, что алгоритмы на основе деревьев решений лучше справляются с нелинейными зависимостями в табличных кредитных данных и менее чувствительны к выбросам по сравнению с линейными моделями.</p>
+<hr />
+<h2 id="4">4. Обзор современных алгоритмов классификации</h2>
+<p>На основе анализа научных публикаций и соревнований Kaggle:
+1. <strong>Gradient Boosted Decision Trees (GBDT):</strong> Библиотеки <strong>CatBoost</strong>, <strong>LightGBM</strong> и <strong>XGBoost</strong> являются стандартом отрасли для работы с табличными данными благодаря высокой точности и эффективной работе с категориальными признаками.
+2. <strong>Deep Learning для табличных данных:</strong> Модели на базе архитектур <strong>TabNet</strong> и <strong>FT-Transformer</strong> всё чаще применяются при наличии больших объемов данных.</p>
+<hr />
+<h2 id="5-ml-fastapi-flask">5. Пошаговый алгоритм интеграции ML-модели с веб-сервисом (FastAPI / Flask)</h2>
+<ol>
+<li><strong>Сохранение обученной модели:</strong>
+   ```python
+   import joblib
+   joblib.dump(model, 'credit_default_model.pkl')
+1- Создание REST API (FastAPI) : </li>
+</ol>
+<p>from fastapi import FastAPI
+import joblib
+import numpy as np</p>
+<p>app = FastAPI()
+model = joblib.load('credit_default_model.pkl')</p>
+<p>@app.post("/predict")
+def predict(features: list):
+    data = np.array(features).reshape(1, -1)
+    prediction = model.predict(data)
+    return {"default_prediction": int(prediction[0])}
+Контейнеризация: Упаковка приложения и его зависимостей с помощью Dockerfile.</p>
+<p>Развертывание (Deployment): Публикация Docker-контейнера на облачном сервере (VPS / Cloud).</p>
+<ol>
+<li>Заключение
+В ходе лабораторной работы были освоены навыки предварительной обработки данных, построения и сравнения классификаторов в Scikit-Learn, а также сформировано понимание архитектуры деплоя ML-моделей в продакшен.</li>
+</ol>
 
 
 
